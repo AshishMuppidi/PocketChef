@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: none
+  flyway:
+    enabled: false
+  ai:
+    openai:
+      api-key: test-dummy-key-for-unit-tests-only
+      chat:
+        options:
+          model: gemini-2.5-flash
+
+cloudinary:
+  cloud-name: test-dummy-cloud
+  api-key: test-dummy-key
+  api-secret: test-dummy-secret
+
+jwt:
+  secret: testSecretKeyForUnitAndIntegrationTestingMustBeAtLeast256BitsLong!
+  expiration-ms: 86400000
