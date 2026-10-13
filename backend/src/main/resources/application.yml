@@ -45,7 +45,7 @@ cloudinary:
   api-secret: ${CLOUDINARY_API_SECRET:}
 
 jwt:
-  secret: ${JWT_SECRET:defaultSecretKeyForDevelopmentMustBeAtLeast256BitsLongForHmacSha256!}
+  secret: ${JWT_SECRET}
   expiration-ms: ${JWT_EXPIRATION_MS:86400000}
 
 cors:
